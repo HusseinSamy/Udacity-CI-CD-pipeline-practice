@@ -11,6 +11,7 @@ jobs:
   steps:
    - node/install
    - checkout
+   - aws-cli/setup
    - run:
       name: Front-End Install
       command: |
@@ -30,5 +31,4 @@ jobs:
    - run:
     name: Front-End Deploy
     command: |
-      npm run frontend:deploy   
-   - aws-cli/setup           
+      npm run frontend:deploy            
