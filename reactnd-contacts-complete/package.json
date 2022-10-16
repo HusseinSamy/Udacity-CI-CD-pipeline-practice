@@ -17,6 +17,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy":"cd bin && deploy.bat"
+    "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
   }
 }
